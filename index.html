@@ -113,3 +113,46 @@ footer{text-align:center;padding:20px;color:#888}
 
 </body>
 </html>
+<style>
+.design-box{
+  animation: showBox 0.8s ease forwards;
+  opacity:0;
+}
+
+@keyframes showBox{
+  from{
+    opacity:0;
+    transform:translateY(50px) scale(.9);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0) scale(1);
+  }
+}
+
+.design-box img{
+  animation: zoomImg 3s infinite alternate;
+}
+
+@keyframes zoomImg{
+  from{
+    transform:scale(1);
+  }
+  to{
+    transform:scale(1.05);
+  }
+}
+
+h1{
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow{
+  from{
+    text-shadow:0 0 5px #ffd700;
+  }
+  to{
+    text-shadow:0 0 25px #ffd700;
+  }
+}
+</style>
